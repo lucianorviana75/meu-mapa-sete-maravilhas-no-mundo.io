@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_efee6aa6d6da3f4f393f3322dac3e971 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 90.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .bt{
+                    background-color: red;
+                    color: white;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    <a href="../my-map.html" ><button type="submit" class="bt">home page</button></a>
+    
+    <div class="folium-map" id="map_efee6aa6d6da3f4f393f3322dac3e971" ></div>
+           
+        
+</body>
+    <script>
+        
+        
+        var map_efee6aa6d6da3f4f393f3322dac3e971 = L.map(
+            "map_efee6aa6d6da3f4f393f3322dac3e971",
+            {
+                center: [21.2894, -21.0938],
+                crs: L.CRS.EPSG3857,
+                zoom: 2,
+                zoomControl: true,
+                preferCanvas: false,
+            }
+        );
+        L.control.scale().addTo(map_efee6aa6d6da3f4f393f3322dac3e971);
+
+
+
+
+
+        var tile_layer_a52b80932510327eae4bc440052ae703 = L.tileLayer(
+            "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+            {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+        );
+
+
+        tile_layer_a52b80932510327eae4bc440052ae703.addTo(map_efee6aa6d6da3f4f393f3322dac3e971);
+
+
+        var marker_7f74033455b10f6db92035f9e84d1f94 = L.marker(
+            [40.43205466910793, 116.5703534380663],
+            {}
+        ).addTo(map_efee6aa6d6da3f4f393f3322dac3e971);
+
+
+        var icon_31b795e673db7bdfa4223b013db0fa0f = L.AwesomeMarkers.icon(
+            {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-camera", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+        );
+        marker_7f74033455b10f6db92035f9e84d1f94.setIcon(icon_31b795e673db7bdfa4223b013db0fa0f);
+
+
+        var popup_84b7bd1f3950f8362fb5b40f54e1f0a2 = L.popup({"maxWidth": "100%"});
+
+
+
+            var html_bc538d9dfcce146e506506d5b4582000 = $(`<div id="html_bc538d9dfcce146e506506d5b4582000" style="width: 100.0%; height: 100.0%;">Grande Muralha da China</div>`)[0];
+            popup_84b7bd1f3950f8362fb5b40f54e1f0a2.setContent(html_bc538d9dfcce146e506506d5b4582000);
+
+
+
+        marker_7f74033455b10f6db92035f9e84d1f94.bindPopup(popup_84b7bd1f3950f8362fb5b40f54e1f0a2)
+        ;
+
+
+
+
+        var marker_d037dfc7139e22feb6f6fc7e0c376ac6 = L.marker(
+            [-22.951649233528503, -43.21050866252006],
+            {}
+        ).addTo(map_efee6aa6d6da3f4f393f3322dac3e971);
+
+
+        var icon_43934ad8bfeb0848c9968a8847eb4e12 = L.AwesomeMarkers.icon(
+            {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-camera", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+        );
+        marker_d037dfc7139e22feb6f6fc7e0c376ac6.setIcon(icon_43934ad8bfeb0848c9968a8847eb4e12);
+
+
+        var popup_b01ffc49e506443a6ade9aff61662920 = L.popup({"maxWidth": "100%"});
+
+
+
+            var html_23447ae9fd36e14a7a920b057299e7ac = $(`<div id="html_23447ae9fd36e14a7a920b057299e7ac" style="width: 100.0%; height: 100.0%;">Cristo Redentor</div>`)[0];
+            popup_b01ffc49e506443a6ade9aff61662920.setContent(html_23447ae9fd36e14a7a920b057299e7ac);
+
+
+
+        marker_d037dfc7139e22feb6f6fc7e0c376ac6.bindPopup(popup_b01ffc49e506443a6ade9aff61662920)
+        ;
+
+
+
+
+        var marker_273dfec2b5c6454a6ea3b45df1560178 = L.marker(
+            [-13.162979372949751, -72.54525140061105],
+            {}
+        ).addTo(map_efee6aa6d6da3f4f393f3322dac3e971);
+
+
+        var icon_0dbfa3bf725250b6ccc12d4ff8e6194c = L.AwesomeMarkers.icon(
+            {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-camera", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+        );
+        marker_273dfec2b5c6454a6ea3b45df1560178.setIcon(icon_0dbfa3bf725250b6ccc12d4ff8e6194c);
+
+
+        var popup_218221a0946ea3164f3ce757805ab9df = L.popup({"maxWidth": "100%"});
+
+
+
+            var html_1b396c9d61013f6ad8cf98f66b54f12c = $(`<div id="html_1b396c9d61013f6ad8cf98f66b54f12c" style="width: 100.0%; height: 100.0%;">Machu Picchu</div>`)[0];
+            popup_218221a0946ea3164f3ce757805ab9df.setContent(html_1b396c9d61013f6ad8cf98f66b54f12c);
+
+
+
+        marker_273dfec2b5c6454a6ea3b45df1560178.bindPopup(popup_218221a0946ea3164f3ce757805ab9df)
+        ;
+
+
+
+
+        var marker_f960309911961dfe3eb78f0f82ad2a85 = L.marker(
+            [20.679466143446703, -88.5684340048395],
+            {}
+        ).addTo(map_efee6aa6d6da3f4f393f3322dac3e971);
+
+
+        var icon_42da479b8833578c0e239f49f61a1ec5 = L.AwesomeMarkers.icon(
+            {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-camera", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+        );
+        marker_f960309911961dfe3eb78f0f82ad2a85.setIcon(icon_42da479b8833578c0e239f49f61a1ec5);
+
+
+        var popup_523350a1b73b04d25dcdc89f3b7a3aeb = L.popup({"maxWidth": "100%"});
+
+
+
+            var html_075c469730aa779a0e793e4f3288ade5 = $(`<div id="html_075c469730aa779a0e793e4f3288ade5" style="width: 100.0%; height: 100.0%;">Chichén Itzá</div>`)[0];
+            popup_523350a1b73b04d25dcdc89f3b7a3aeb.setContent(html_075c469730aa779a0e793e4f3288ade5);
+
+
+
+        marker_f960309911961dfe3eb78f0f82ad2a85.bindPopup(popup_523350a1b73b04d25dcdc89f3b7a3aeb)
+        ;
+
+
+
+
+        var marker_8b10b0e03784d4ec4a9e02aea80a9d55 = L.marker(
+            [41.890369907457774, 12.492284539998344],
+            {}
+        ).addTo(map_efee6aa6d6da3f4f393f3322dac3e971);
+
+
+        var icon_6a5ed6b848e8fbb4b16544ccc36f5b3a = L.AwesomeMarkers.icon(
+            {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-camera", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+        );
+        marker_8b10b0e03784d4ec4a9e02aea80a9d55.setIcon(icon_6a5ed6b848e8fbb4b16544ccc36f5b3a);
+
+
+        var popup_e2a1c8dca021433a4c9eb5c1ca8a0611 = L.popup({"maxWidth": "100%"});
+
+
+
+            var html_6f96c874f0610e939de0736b5b9c93b9 = $(`<div id="html_6f96c874f0610e939de0736b5b9c93b9" style="width: 100.0%; height: 100.0%;">Coliseu</div>`)[0];
+            popup_e2a1c8dca021433a4c9eb5c1ca8a0611.setContent(html_6f96c874f0610e939de0736b5b9c93b9);
+
+
+
+        marker_8b10b0e03784d4ec4a9e02aea80a9d55.bindPopup(popup_e2a1c8dca021433a4c9eb5c1ca8a0611)
+        ;
+
+
+
+
+        var marker_b8b54105cc023f574fe219b1dc136896 = L.marker(
+            [30.32867662749265, 35.4443514664021],
+            {}
+        ).addTo(map_efee6aa6d6da3f4f393f3322dac3e971);
+
+
+        var icon_914b03a631bcfe118addcbdb8848a42e = L.AwesomeMarkers.icon(
+            {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-camera", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+        );
+        marker_b8b54105cc023f574fe219b1dc136896.setIcon(icon_914b03a631bcfe118addcbdb8848a42e);
+
+
+        var popup_f9c0f9679e3495f809e65fdd979b789e = L.popup({"maxWidth": "100%"});
+
+
+
+            var html_4a7c3dcb1dccb9c01b0ee07e556e1397 = $(`<div id="html_4a7c3dcb1dccb9c01b0ee07e556e1397" style="width: 100.0%; height: 100.0%;">Petra</div>`)[0];
+            popup_f9c0f9679e3495f809e65fdd979b789e.setContent(html_4a7c3dcb1dccb9c01b0ee07e556e1397);
+
+
+
+        marker_b8b54105cc023f574fe219b1dc136896.bindPopup(popup_f9c0f9679e3495f809e65fdd979b789e)
+        ;
+
+
+
+
+        var marker_4ec182e08248ab91fa4c900876ac63f6 = L.marker(
+            [27.17543111199757, 78.04217438161723],
+            {}
+        ).addTo(map_efee6aa6d6da3f4f393f3322dac3e971);
+
+
+        var icon_1409a6b9a903d4f088866912347c2de7 = L.AwesomeMarkers.icon(
+            {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-camera", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+        );
+        marker_4ec182e08248ab91fa4c900876ac63f6.setIcon(icon_1409a6b9a903d4f088866912347c2de7);
+
+
+        var popup_783a330d87a58552912ee111ef9304e4 = L.popup({"maxWidth": "100%"});
+
+
+
+            var html_91b2171a08cb9b09c9f3e7460da692e2 = $(`<div id="html_91b2171a08cb9b09c9f3e7460da692e2" style="width: 100.0%; height: 100.0%;">Taj Mahal</div>`)[0];
+            popup_783a330d87a58552912ee111ef9304e4.setContent(html_91b2171a08cb9b09c9f3e7460da692e2);
+
+
+
+        marker_4ec182e08248ab91fa4c900876ac63f6.bindPopup(popup_783a330d87a58552912ee111ef9304e4)
+        ;
+
+
+
+
+            var lat_lng_popup_fab732acfc8bc5680240007f4acf2bdc = L.popup();
+            function latLngPop(e) {
+                lat_lng_popup_fab732acfc8bc5680240007f4acf2bdc
+                    .setLatLng(e.latlng)
+                    .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                    .openOn(map_efee6aa6d6da3f4f393f3322dac3e971);
+                }
+            map_efee6aa6d6da3f4f393f3322dac3e971.on('click', latLngPop);
+
+    </script>
+</html>
